@@ -3,6 +3,8 @@
 /* eslint-disable */
 import type * as chainlink from "./@chainlink";
 export type { chainlink };
+import type * as openzeppelin from "./@openzeppelin";
+export type { openzeppelin };
 import type * as contracts from "./contracts";
 export type { contracts };
 export * as factories from "./factories";
@@ -56,8 +58,14 @@ export type { LinkERC20Basic } from "./@chainlink/token/contracts/v0.4/token/Lin
 export { LinkERC20Basic__factory } from "./factories/@chainlink/token/contracts/v0.4/token/LinkERC20Basic__factory";
 export type { LinkStandardToken } from "./@chainlink/token/contracts/v0.4/token/LinkStandardToken";
 export { LinkStandardToken__factory } from "./factories/@chainlink/token/contracts/v0.4/token/LinkStandardToken__factory";
+export type { IERC20Metadata } from "./@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata";
+export { IERC20Metadata__factory } from "./factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory";
+export type { IERC20 } from "./@openzeppelin/contracts/token/ERC20/IERC20";
+export { IERC20__factory } from "./factories/@openzeppelin/contracts/token/ERC20/IERC20__factory";
 export type { APIConsumer } from "./contracts/APIConsumer";
 export { APIConsumer__factory } from "./factories/contracts/APIConsumer__factory";
+export type { BettingV1 } from "./contracts/Betting/BettingV1";
+export { BettingV1__factory } from "./factories/contracts/Betting/BettingV1__factory";
 export type { KeepersCounter } from "./contracts/KeepersCounter";
 export { KeepersCounter__factory } from "./factories/contracts/KeepersCounter__factory";
 export type { PriceConsumerV3 } from "./contracts/PriceConsumerV3";
@@ -68,3 +76,5 @@ export type { KeepersCounterEchidnaTest } from "./contracts/test/fuzzing/Keepers
 export { KeepersCounterEchidnaTest__factory } from "./factories/contracts/test/fuzzing/KeepersCounterEchidnaTest__factory";
 export type { MockOracle } from "./contracts/test/MockOracle";
 export { MockOracle__factory } from "./factories/contracts/test/MockOracle__factory";
+export type { ERC20 } from "./contracts/utils/DaddyTokens.sol/ERC20";
+export { ERC20__factory } from "./factories/contracts/utils/DaddyTokens.sol/ERC20__factory";
